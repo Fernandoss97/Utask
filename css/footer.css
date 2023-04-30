@@ -1,0 +1,24 @@
+footer {
+  background-color: #114fa7;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0;
+}
+
+.marca1 {
+  margin-left: 160px;
+}
+.marca1 a{
+  text-decoration: none;
+  color: #FAFAFA;
+}
+
+.marca2 {
+  margin-right: 160px;
+}
+
+.marca2-marca{
+  margin-left: 0;
+}

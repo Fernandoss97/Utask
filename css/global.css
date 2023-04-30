@@ -1,0 +1,12 @@
+h1 h2 p{
+  margin: 0px;
+}
+img{
+  max-width: 100%;
+  display: block;
+}
+body{
+  font-family: Poppins;
+  margin: 0px;
+  color: #fff;
+}
