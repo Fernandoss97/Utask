@@ -1,7 +1,9 @@
 footer {
+  height: 50px;
   background-color: #114fa7;
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   position: fixed;
   bottom: 0;
@@ -14,11 +16,13 @@ footer {
   text-decoration: none;
   color: #FAFAFA;
 }
-
-.marca2 {
+.marca2{
+  display: flex;
+  align-items: center;
   margin-right: 160px;
 }
-
 .marca2-marca{
-  margin-left: 0;
+  margin-left: 5px;
+  margin-right: 5px;
+  color: aqua;
 }
