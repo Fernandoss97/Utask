@@ -39,23 +39,26 @@
   display: flex;
   margin-top: 32px;
   align-items: center;
+  padding-left: 160px;
+  padding-right: 160px;
+}
+.andamento{
+  padding-left: 55px;
+}
+.feito{
+  padding-left: 210px;
 }
 
-.fazer {
-  margin-left: 160px;
-}
 
 .subtitulo img {
   margin-left: 202px;
 }
-
-.andamento {
-  margin-left: 40px;
+.botao_add{
+  background-color: aqua;
+width: 30px;
 }
 
-.feito {
-  margin-left: 178px;
-}
+
 
 .subtitulo p {
   color: black;
@@ -71,21 +74,21 @@
   gap: 40px;
 }
 
-.estrutura-fazer,  .estrutura-fazendo, .estrutura-feito{
+.estrutura-fazer,
+.estrutura-fazendo,
+.estrutura-feito {
   background-color: #eeeeee;
   width: 293px;
   border-radius: 20px;
 }
 .fazer-item {
   background-color: #fff;
+  height: auto;
+  width: auto;
   margin-top: 20px;
   margin-left: 20px;
   margin-right: 20px;
   border-radius: 20px;
-  height: 74px;
-  width: 253px;
-  display: flex;
-  gap: 15px;
 }
 .fazer-item p {
   color: black;
@@ -103,31 +106,40 @@
   font-size: 14px;
   line-height: 21px;
 }
-.expand{
+.more {
   display: inline-block;
 }
-.fazer-item p{
+.more_vert {
+  padding-right: 10px;
+}
+.sup {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+  height: 21px;
+  padding-top: 10px;
   padding-left: 10px;
+  padding-right: 10px;
+}
+.inf {
+  display: flex;
+  justify-content: space-between;
+  height: 31px;
+  padding-left: 10px;
+  padding-right: 10px;
   padding-bottom: 10px;
 }
-.fazer-item h2{
+.prox {
+  display: inline-block;
+}
+.botoes_nav {
+  display: flex;
+  gap: 8px;
+  padding-top: 10px;
+}
+.descricao {
   padding-left: 10px;
-}
-.lixeira{
-  position: relative;
-  top: -25px;
-  right: -10px;
-}
-.excluir{
-  position: relative;
-  top: -11px;
-  right: -15px;
-}
-.canto{
-  display: grid;
-}
-.more{
-  padding-top: 20px;
-  margin-left: 60px;
-  margin-bottom: 0px;
+  padding-right: 10px;
+  padding-bottom: 10px;
 }

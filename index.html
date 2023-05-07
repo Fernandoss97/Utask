@@ -9,14 +9,14 @@
 </head>
 
 <body>
-    <header class="header">
+    <header>
         <div class="logo">
             <img src="/img/[Imagem] Logo branca.svg" alt="logo">
         </div>
         <h1 class="titulo">uTask 3.0</h1>
 
         <div class="lm">
-            <span><img src="/img/[Botão] Light mode.svg" alt=""></span>
+            <span><a href=""><img src="/img/[Botão] Light mode.svg" alt=""></a></span>
         </div>
     </header>
 
@@ -27,10 +27,10 @@
             <p>Se você quer um pedacinho do paraíso, acredite em Deus. Mas se você quer conquistar o mundo, acredite em você porque Deus já te deu tudo o que você precisa para você vencer.</p>
         </div>
     </div>
-
+    
     <div class="subtitulo">
         <p class="fazer">A fazer</p>
-        <img src="/img/add_circle_outline_black_24dp.svg" alt="">
+        <a href="#tela_modal"><img src="/img/add_circle_outline_black_24dp.svg" alt=""></a>
         <p class="andamento">Em andamento</p>
         <p class="feito">Feito</p>
     </div>
@@ -38,51 +38,78 @@
     <div class="estrutura">
         <div class="estrutura-fazer">
             <div class="fazer-item">
-                <div>
-                    <h2>Pagar conta de luz</h2>
-                    <p>Ler descrição <span class="expand"><img src="/img/expand_more.svg" alt=""></span></p>
+                <div class="sup">
+                    <h2 class="top-left">Pagar conta de luz</h2>
+                    <span class="more_vert"><a href=""><img src="/img/more_vert.svg" alt=""></a></span>
                 </div>
-                
-                <div>
-                    <div class="canto">
-                        <span class="more"><img src="/img/more_vert.svg" alt=""></span>
-                        <span class="botao"><img src="/img/Rectangle 33.svg" alt=""><span class="lixeira"><img src="/img/delete_outline.svg" alt=""><span class="excluir"><img src="/img/Excluir.svg" alt=""></span></span></span>
+                <div class="inf">
+                    <p class="bottom-left"><a href="">Ler descrição <span class="more"><img src="/img/expand_more.svg" alt=""></a></span></p>
+                    <span><a href=""><img src="/img/PopUp Excluir.svg" alt=""></a></span>
+                </div>
+            </div>
+            <div class="fazer-item">
+                <div class="sup">
+                    <h2 class="top-left">Fazer compras no mercado</h2>
+                    <span class="more_vert"><a href=""><img src="/img/more_vert.svg" alt=""></a></span>
+                </div>
+                <div class="inf">
+                    <p class="bottom-left"><a href="">Esconder descrição <span class="more"><img src="/img/expand_less.svg" alt=""></a></span></p>
+                    <div class="botoes_nav">
+                        <span class="prox"><a href=""><img src="/img/[Botão] Proximo.svg" alt=""></a></span>
                     </div>
-                    
                 </div>
+                <p class="descricao">Comprar batata, cenoura, feijão, alho, arroz e pipoca.</p>
             </div>
         </div>
         <div class="estrutura-fazendo">
             <div class="fazer-item">
-                <div>
-                    <h2>Pagar conta de luz</h2>
-                    <p>Ler descrição <span class="expand"><img src="/img/expand_more.svg" alt=""></span></p>
+                <div class="sup">
+                    <h2 class="top-left">Fazer manicure</h2>
+                    <span class="more_vert"><a href=""><img src="/img/more_vert.svg" alt=""></a></span>
                 </div>
-                
-                <div>
-                    <div class="canto">
-                        <span class="more"><img src="/img/more_vert.svg" alt=""></span>
-                        <span class="botao"><img src="/img/Rectangle 33.svg" alt=""><span class="lixeira"><img src="/img/delete_outline.svg" alt=""><span class="excluir"><img src="/img/Excluir.svg" alt=""></span></span></span>
+                <div class="inf">
+                    <p class="bottom-left"><a href="">Ler descrição <span class="more"><img src="/img/expand_more.svg" alt=""></a></span></p>
+
+                    <div class="botoes_nav">
+                        <span><a href=""><img src="/img/[Botão] Voltar.svg" alt=""></a></span>
+                        <span class="prox"><a href=""><img src="/img/[Botão] Proximo.svg" alt=""></a></span>
                     </div>
-                    
                 </div>
             </div>
         </div>
         <div class="estrutura-feito">
             <div class="fazer-item">
-                <div>
-                    <h2>Pagar conta de luz</h2>
-                    <p>Ler descrição <span class="expand"><img src="/img/expand_more.svg" alt=""></span></p>
+                <div class="sup">
+                    <h2 class="top-left">Fazer manicure</h2>
+                    <span class="more_vert"><a href=""><img src="/img/more_vert.svg" alt=""></a></span>
                 </div>
-                
-                <div>
-                    <div class="canto">
-                        <span class="more"><img src="/img/more_vert.svg" alt=""></span>
-                        <span class="botao"><img src="/img/Rectangle 33.svg" alt=""><span class="lixeira"><img src="/img/delete_outline.svg" alt=""><span class="excluir"><img src="/img/Excluir.svg" alt=""></span></span></span>
+                <div class="inf">
+                    <p class="bottom-left"><a href="">Ler descrição <span class="more"><img src="/img/expand_more.svg" alt=""></a></span></p>
+
+                    <div class="botoes_nav">
+                        <span><a href=""><img src="/img/[Botão] Voltar.svg" alt=""></a></span>
+                        <span class="prox"><a href=""><img src="/img/[Botão] Update.svg" alt=""></a></span>
                     </div>
-                    
                 </div>
             </div>
+        </div>
+    </div>
+    <div id="tela_modal" class="modal">
+        <div class="conteudo_modal">
+            <div class="titulo_modal">
+                <h1>Nova Task</h1>
+                <a href="#"><img src="/img/[Botão] Fechar.svg" alt=""></a>
+            </div>
+            <form action="./">
+                <label for="titulo">Título</label>
+                <input class="campo_titulo" type="text" id="titulo">
+                <label class="label_descricao" for="descricao">Descrição</label>
+                <input class="campo_descricao" type="text" id="descricao">
+            </form>
+            <div class="botao_criar_task">
+                <a href="">Criar task</a>
+            </div>
+
         </div>
     </div>
 
@@ -90,7 +117,8 @@
         <p class="marca1">© Processo de Trainee <a href="https://unect.com.br/">Unect Jr.</a> 2022.1</p>
         <div class="marca2">
             <p>Feito com
-            <p class="marca2-marca"><img src="/img/favorite.svg" alt="Favorito"></p> por Fernando Nascimento</p>
+            <p class="marca2-marca"><img src="/img/favorite.svg" alt="Favorito"></p> por <p class="assinatura">Fernando Nascimento</p>
+            </p>
         </div>
     </footer>
 </body>

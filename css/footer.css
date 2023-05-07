@@ -6,7 +6,7 @@ footer {
   flex-wrap: wrap;
   justify-content: space-between;
   position: fixed;
-  bottom: 0;
+  bottom: 0px;
 }
 
 .marca1 {
@@ -15,14 +15,14 @@ footer {
 .marca1 a{
   text-decoration: none;
   color: #FAFAFA;
+  font-weight: 600;
 }
 .marca2{
   display: flex;
   align-items: center;
   margin-right: 160px;
+  gap: 5px;
 }
-.marca2-marca{
-  margin-left: 5px;
-  margin-right: 5px;
-  color: aqua;
+.assinatura{
+  font-weight: 600;
 }

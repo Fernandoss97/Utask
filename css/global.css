@@ -10,3 +10,6 @@ body{
   margin: 0px;
   color: #fff;
 }
+a {
+  text-decoration: none;
+}
