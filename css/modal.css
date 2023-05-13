@@ -16,7 +16,7 @@
   width: 474px;
   height: 421px;
   border-radius: 20px;
-  background:#FFFFFF;
+  background: #ffffff;
 }
 .conteudo_modal h1 {
   color: black;
@@ -63,15 +63,17 @@ input {
   font-size: 14px;
   line-height: 21px;
 }
-.label_descricao{
+.label_descricao {
   padding-top: 20px;
 }
-.campo_descricao{
+.campo_descricao {
   min-height: 90px;
   margin-bottom: 40px;
 }
-.botao_criar_task {
+
+.botao_criar_task button {
   background: linear-gradient(90.35deg, #4890f5 0%, #226ed8 99.7%);
+  color: #ffffff;
   display: flex;
   width: 374px;
   height: 41px;
@@ -79,8 +81,11 @@ input {
   justify-content: center;
   margin-left: 50px;
   border-radius: 20px;
-}
-.botao_criar_task a {
-  text-decoration: none;
-  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
 }

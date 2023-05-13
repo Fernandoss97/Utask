@@ -36,32 +36,36 @@
     </div>
 
     <div class="estrutura">
-        <div class="estrutura-fazer">
-            <div class="fazer-item">
-                <div class="sup">
-                    <h2 class="top-left">Pagar conta de luz</h2>
-                    <span class="more_vert"><a href=""><img src="/img/more_vert.svg" alt=""></a></span>
-                </div>
-                <div class="inf">
-                    <p class="bottom-left"><a href="">Ler descrição <span class="more"><img src="/img/expand_more.svg" alt=""></a></span></p>
-                    <span><a href=""><img src="/img/PopUp Excluir.svg" alt=""></a></span>
-                </div>
-            </div>
-            <div class="fazer-item">
-                <div class="sup">
-                    <h2 class="top-left">Fazer compras no mercado</h2>
-                    <span class="more_vert"><a href=""><img src="/img/more_vert.svg" alt=""></a></span>
-                </div>
-                <div class="inf">
-                    <p class="bottom-left"><a href="">Esconder descrição <span class="more"><img src="/img/expand_less.svg" alt=""></a></span></p>
-                    <div class="botoes_nav">
-                        <span class="prox"><a href=""><img src="/img/[Botão] Proximo.svg" alt=""></a></span>
+        <div id="fazer" class="estrutura-fazer">
+                <div class="fazer-item">
+                    <div class="sup">
+                        <h2 class="top-left">Pagar conta de luz</h2>
+                        <span class="more_vert"><a href=""><img src="/img/more_vert.svg" alt=""></a></span>
+                    </div>
+                    <div class="inf">
+                        <p class="bottom-left"><a href="#">Ler descrição <span class="more"><img src="/img/expand_more.svg" alt=""></a></span></p>
+                        <div><span class="prox"><a href=""><img src="/img/[Botão] Proximo.svg" alt=""></a></span></div>
+                        <button class="btn-excluir"><img src="/img/PopUp Excluir.svg" alt=""></button>
+                        <!-- <span><a href="#"><img src="/img/PopUp Excluir.svg" alt=""></a></span>  -->
                     </div>
                 </div>
-                <p class="descricao">Comprar batata, cenoura, feijão, alho, arroz e pipoca.</p>
-            </div>
+                <!-- <div class="fazer-item">
+                    <div class="sup">
+                        <h2 class="top-left">Fazer compras no mercado</h2>
+                        <span class="more_vert"><a href=""><img src="/img/more_vert.svg" alt=""></a></span>
+                    </div>
+                    <div class="inf">
+                        <p id="esconderDesc"><a href="">Esconder descrição <span class="more"><img src="/img/expand_less.svg" alt=""></a></span></p>
+                        <div class="botoes_nav">
+                            <span class="prox"><a href=""><img src="/img/[Botão] Proximo.svg" alt=""></a></span>
+                            <button class="btn-excluir"><img src="/img/PopUp Excluir.svg" alt=""></button>
+                        </div>
+                    </div>
+                    <p id="descricao" class="descricao">Comprar batata, cenoura, feijão, alho, arroz e pipoca.</p>
+                </div> -->
+           
         </div>
-        <div class="estrutura-fazendo">
+        <div id="fazendo" class="estrutura-fazendo">
             <div class="fazer-item">
                 <div class="sup">
                     <h2 class="top-left">Fazer manicure</h2>
@@ -84,7 +88,7 @@
                     <span class="more_vert"><a href=""><img src="/img/more_vert.svg" alt=""></a></span>
                 </div>
                 <div class="inf">
-                    <p class="bottom-left"><a href="">Ler descrição <span class="more"><img src="/img/expand_more.svg" alt=""></a></span></p>
+                    <p class="bottom-left"><a href="#">Ler descrição <span class="more"><img src="/img/expand_more.svg" alt=""></a></span></p>
 
                     <div class="botoes_nav">
                         <span><a href=""><img src="/img/[Botão] Voltar.svg" alt=""></a></span>
@@ -106,8 +110,8 @@
                 <label class="label_descricao" for="descricao">Descrição</label>
                 <input class="campo_descricao" type="text" id="descricao">
             </form>
-            <div class="botao_criar_task">
-                <a href="">Criar task</a>
+            <div id="criar-task" class="botao_criar_task">
+                <button>Criar Task</button>
             </div>
 
         </div>
@@ -121,6 +125,7 @@
             </p>
         </div>
     </footer>
+    <script src="/scrip.js"></script>
 </body>
 
 </html>

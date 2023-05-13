@@ -42,23 +42,20 @@
   padding-left: 160px;
   padding-right: 160px;
 }
-.andamento{
+.andamento {
   padding-left: 55px;
 }
-.feito{
+.feito {
   padding-left: 210px;
 }
-
 
 .subtitulo img {
   margin-left: 202px;
 }
-.botao_add{
+.botao_add {
   background-color: aqua;
-width: 30px;
+  width: 30px;
 }
-
-
 
 .subtitulo p {
   color: black;
@@ -69,8 +66,9 @@ width: 30px;
   margin-left: 160px;
   margin-right: 160px;
   margin-top: 8px;
+  margin-bottom: 8px;
   width: 1041px;
-  height: 250px;
+  min-height: fit-content;
   gap: 40px;
 }
 
@@ -86,9 +84,11 @@ width: 30px;
   height: auto;
   width: auto;
   margin-top: 20px;
+  margin-bottom: 20px;
   margin-left: 20px;
   margin-right: 20px;
   border-radius: 20px;
+
 }
 .fazer-item p {
   color: black;
@@ -109,6 +109,7 @@ width: 30px;
 .more {
   display: inline-block;
 }
+
 .more_vert {
   padding-right: 10px;
 }
@@ -129,6 +130,15 @@ width: 30px;
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 10px;
+  position: relative;
+}
+.btn-excluir{
+  padding: 0px;
+  width: auto;
+  background-color: #fff;
+  border: none;
+  position: absolute;
+  right: 10px;
 }
 .prox {
   display: inline-block;
