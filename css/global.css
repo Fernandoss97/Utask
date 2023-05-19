@@ -5,11 +5,13 @@ img{
   max-width: 100%;
   display: block;
 }
-body{
+ body{
+  max-width: 1280px;
   font-family: Poppins;
   margin: 0px;
   color: #fff;
-}
+}  
+
 a {
   text-decoration: none;
 }

@@ -11,6 +11,7 @@
   justify-content: center;
   background: rgba(77, 77, 77, 0.7);
   transition: all 0.4s;
+  z-index: 1;
 }
 .conteudo_modal {
   width: 474px;
@@ -88,4 +89,54 @@ input {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
+}
+.modal_frase{
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(77, 77, 77, 0.7);
+  transition: all 0.4s;
+  z-index: 1;
+}
+.frase_content{
+  max-width: 315px;
+  height: auto;
+  border-radius: 20px;
+  background: #ffffff;
+}
+.frase_content p,h2{
+  color: black;
+}
+.frase_content p{
+  text-align: justify;
+  padding-left: 10px;
+  padding-right: 30px;
+}
+.frase_content_sup{
+  display: flex;
+  align-items: center;
+  
+}
+.frase_content_sup img{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.frase_content_sup a{
+  padding-left: 40px;
+}
+.btn_fecharFrase{
+  cursor: pointer;
+  margin-left: 30px;
+}
+.esconder_frase{
+  visibility: hidden;
+}
+.mostrar_frase{
+  visibility: visible;
 }

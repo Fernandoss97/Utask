@@ -12,9 +12,10 @@ const clickCriar = () => {
   tituloElement.innerText = titulo.value;
   var moreVert = document.createElement("span");
   moreVert.classList.add("more_vert");
-  
+  moreVert.setAttribute("id", "more_vert");
+
   moreVert.innerHTML =
-    '<a href="#"><img src="/img/more_vert.svg" alt=""></a></span>';
+    '<a href="#btn-excluir"><button  id="menuExlcluir" class="menuExcluir"><img src="/img/more_vert.svg" alt=""></button></a>';
   divSup.appendChild(tituloElement);
   divSup.appendChild(moreVert);
 
@@ -29,12 +30,15 @@ const clickCriar = () => {
   var divBotoesNav = document.createElement("div");
   divBotoesNav.classList.add("botoes_nav");
   var spanNav = document.createElement("span");
-  spanNav.classList.add("prox");
+  // spanNav.classList.add("prox");
   spanNav.innerHTML =
-    '<a href=""><img src="/img/[Botão] Proximo.svg" alt=""></a></span>';
+    '<span class="prox"><a href=""><img src="/img/[Botão] Proximo.svg" alt=""></a></span>';
   var btn_excluir = document.createElement("button");
   btn_excluir.classList.add("btn-excluir");
-  btn_excluir.innerHTML = '<img src="/img/PopUp Excluir.svg" alt="">';
+  // btn_excluir.classList.add("");
+  btn_excluir.setAttribute("id", "btn-excluir");
+  btn_excluir.innerHTML =
+    '<a href="#"><img src="/img/PopUp Excluir.svg" alt=""></a>';
   divBotoesNav.appendChild(spanNav);
   divInf.appendChild(pInf);
   divInf.appendChild(btn_excluir);
@@ -54,13 +58,39 @@ const clickCriar = () => {
   titulo.focus();
 };
 
-const clickEsconderDesc = () => {
-  const desc = document.getElementById("descricao");
-  console.log(desc);
-};
-
 const criarTask = document.getElementById("criar-task");
 criarTask.onclick = clickCriar;
 
-const esconderDesc = document.getElementsByClassName("moreVert");
-esconderDesc.onclick = clickEsconderDesc;
+
+const clickEsconderDesc = () => {
+  console.log("teste");
+};
+const mostrarFrase = () => {
+  const frase = document.getElementById("modal_frase");
+    frase.classList.add("mostrar_frase");
+};
+
+const clickFrase = document.getElementById("frase_mob");
+clickFrase.onclick = mostrarFrase;
+
+const fecharFrase = () => {
+  const frase = document.getElementById("modal_frase");
+    frase.classList.remove("mostrar_frase");
+};
+
+const clickFechar = document.getElementById("btn_fecharFrase");
+clickFechar.onclick = fecharFrase;
+
+// const mostrar = () => {
+//   const btnExcluir = document.getElementById("btn-excluir");
+//   if (event.target.matches(".menuExcluir")) {
+//     if (btnExcluir.classList.contains("mostrar")) {
+//       btnExcluir.classList.remove("mostrar");
+//     } else {
+//       btnExcluir.classList.add("mostar");
+//     }
+//   }
+//   console.log("popopo");
+// };
+// const click = document.getElementById("estrutura");
+// click.onclick = mostrar;

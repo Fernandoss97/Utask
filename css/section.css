@@ -8,6 +8,29 @@
   height: 119px;
   margin-top: 32px;
 }
+.frase_mob {
+  visibility: hidden;
+  margin-top: 32px;
+  background-color: #ffd569;
+  border-radius: 10px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  gap: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
+  cursor: pointer;
+}
+.frase_mob h2 {
+  color: #fff;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
 .secao img {
   padding-left: 27px;
 }
@@ -66,7 +89,7 @@
   margin-left: 160px;
   margin-right: 160px;
   margin-top: 8px;
-  margin-bottom: 8px;
+  margin-bottom: 20px;
   width: 1041px;
   min-height: fit-content;
   gap: 40px;
@@ -88,7 +111,6 @@
   margin-left: 20px;
   margin-right: 20px;
   border-radius: 20px;
-
 }
 .fazer-item p {
   color: black;
@@ -113,6 +135,11 @@
 .more_vert {
   padding-right: 10px;
 }
+.btn_exp {
+  background-color: #fff;
+  border: none;
+  /* cursor: pointer; */
+}
 .sup {
   display: flex;
   align-content: center;
@@ -132,16 +159,27 @@
   padding-bottom: 10px;
   position: relative;
 }
-.btn-excluir{
+.menuExcluir {
+  background-color: #fff;
+  cursor: pointer;
+  border: none;
+}
+.btn-excluir {
   padding: 0px;
   width: auto;
   background-color: #fff;
   border: none;
   position: absolute;
   right: 10px;
+  visibility: hidden;
+}
+.btn-excluir:target {
+  visibility: visible;
+  opacity: 1;
 }
 .prox {
   display: inline-block;
+  padding-right: 9px;
 }
 .botoes_nav {
   display: flex;
@@ -152,4 +190,12 @@
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 10px;
+}
+@media screen and (max-width: 400px) {
+  .secao {
+    display: none;
+  }
+  .frase_mob{
+    visibility: visible;
+  }
 }

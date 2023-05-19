@@ -1,29 +1,42 @@
 footer {
-  height: 50px;
+  min-height: 50px;
   background-color: #114fa7;
-  width: 100%;
+
   display: flex;
+  width: 100%;
   flex-wrap: wrap;
   justify-content: space-between;
-  position: fixed;
-  bottom: 0px;
+  /* position: fixed; */
+  /* bottom: 0px; */
   margin-top: 20px;
 }
 
 .marca1 {
   margin-left: 160px;
 }
-.marca1 a{
+.marca1 a {
   text-decoration: none;
-  color: #FAFAFA;
+  color: #fafafa;
   font-weight: 600;
 }
-.marca2{
+.marca2 {
   display: flex;
   align-items: center;
   margin-right: 160px;
   gap: 5px;
 }
-.assinatura{
+.assinatura {
   font-weight: 600;
+}
+@media screen and (max-width: 400px) {
+  footer {
+    flex-direction: column;
+  }
+  .marca1 {
+    margin-left: 20px;
+  }
+  .marca2 {
+    display: flex;
+    margin-left: 20px;
+  }
 }
