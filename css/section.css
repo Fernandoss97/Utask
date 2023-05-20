@@ -86,13 +86,13 @@
 
 .estrutura {
   display: flex;
+  flex-wrap: wrap;
   margin-left: 160px;
   margin-right: 160px;
   margin-top: 8px;
   margin-bottom: 20px;
   min-width: 1041px;
-  /* width: 1041px; */
-  
+  min-height: 80px;
   gap: 40px;
 }
 
@@ -136,11 +136,7 @@
 .more_vert {
   padding-right: 10px;
 }
-.btn_exp {
-  background-color: #fff;
-  border: none;
-  /* cursor: pointer; */
-}
+
 .sup {
   display: flex;
   align-content: center;
@@ -194,8 +190,6 @@
 }
 .carrossel {
   display: flex;
-  /* overflow: hidden; */
-  /* width: 300px; */
   align-items: center;
   justify-content: center;
 }
@@ -206,38 +200,43 @@
   color: black;
   flex: 0 0 100%;
   display: none;
-  /* Outros estilos para cada slide */
 }
-.ativo{
+.ativo {
   display: block;
 }
-.fazer_carrossel{
+.fazer_carrossel {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.fazer_carrossel h2{
-  font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 30px;
+.fazer_carrossel h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+}
+.sub {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
 }
 @media screen and (max-width: 600px) {
   .secao {
     display: none;
   }
-  .frase_mob{
+  .frase_mob {
     visibility: visible;
   }
-  header{
+  header {
     padding-left: 100px;
     padding-right: 100px;
   }
-  
 }
 @media screen and (max-width: 1000px) {
-  .secao{
+  .secao {
     width: auto;
     margin-right: 20px;
     margin-left: 20px;

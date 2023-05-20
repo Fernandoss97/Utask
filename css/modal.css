@@ -93,6 +93,7 @@ input {
 .modal_frase{
   visibility: hidden;
   position: absolute;
+  height: 100%;
   top: 0;
   right: 0;
   bottom: 0;
@@ -134,9 +135,7 @@ input {
   cursor: pointer;
   margin-left: 30px;
 }
-.esconder_frase{
-  visibility: hidden;
-}
+
 .mostrar_frase{
   visibility: visible;
 }

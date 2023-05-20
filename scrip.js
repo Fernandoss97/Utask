@@ -30,12 +30,12 @@ const clickCriar = () => {
   var divBotoesNav = document.createElement("div");
   divBotoesNav.classList.add("botoes_nav");
   var spanNav = document.createElement("span");
-  // spanNav.classList.add("prox");
+
   spanNav.innerHTML =
     '<span class="prox"><a href=""><img src="/img/[Botão] Proximo.svg" alt=""></a></span>';
   var btn_excluir = document.createElement("button");
   btn_excluir.classList.add("btn-excluir");
-  // btn_excluir.classList.add("");
+
   btn_excluir.setAttribute("id", "btn-excluir");
   btn_excluir.innerHTML =
     '<a href="#"><img src="/img/PopUp Excluir.svg" alt=""></a>';
@@ -56,14 +56,21 @@ const clickCriar = () => {
   titulo.value = "";
   descricao.value = "";
   titulo.focus();
+
+  const divSlide = document.querySelector("slide1");
+  divSlide.appendChild(divEstrutura);
+  const carrossel_content = document.querySelector("carrosel_content");
+  carrossel_content.appendChild(divSlide);
+  const carrossel = document.querySelector("carrossel");
+  carrossel.appendChild(carrossel_content);
 };
 
 const criarTask = document.getElementById("criar-task");
 criarTask.onclick = clickCriar;
 
-const clickEsconderDesc = () => {
-  console.log("teste");
-};
+// const clickEsconderDesc = () => {
+//   console.log("teste");
+// };
 const mostrarFrase = () => {
   const frase = document.getElementById("modal_frase");
   frase.classList.add("mostrar_frase");
@@ -85,7 +92,7 @@ var slides = carrossel.querySelectorAll(".slide");
 var anteriorBtn = document.getElementById("anterior");
 var proximoBtn = document.getElementById("proximo");
 var indexAtual = 0;
-slides[0].classList.add('ativo');
+slides[0].classList.add("ativo");
 proximoBtn.addEventListener("click", function () {
   indexAtual = (indexAtual + 1) % slides.length;
   atualizarSlide();

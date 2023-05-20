@@ -17,7 +17,7 @@
         <h1 class="titulo">uTask 3.0</h1>
 
         <div class="lm">
-            <span><a href=""><img src="/img/[Botão] Light mode.svg" alt=""></a></span>
+            <button class="btn_lightmode"><img src="/img/[Botão] Light mode.svg" alt=""></a></button>
         </div>
     </header>
 
@@ -43,66 +43,11 @@
 
     <div id="estrutura" class="estrutura">
         <div id="fazer" class="estrutura-fazer">
-            <div class="fazer-item">
-                <div class="sup">
-                    <span id=""></span>
-                    <h2 class="top-left">Pagar conta de luz</h2>
-                    <span class="more_vert"><a href="#btn_excluir"><img src="/img/more_vert.svg" alt=""> </a></span>
-                </div>
-                <div class="inf">
-                    <p class="bottom-left"><a href="#">Ler descrição <span class="more"><img src="/img/expand_more.svg" alt=""></a></span></p>
-                    <div><span class="prox"><a href=""><img src="/img/[Botão] Proximo.svg" alt=""></a></span></div>
-                    <button id="btn_excluir" class="btn-excluir"><a href="#"><img src="/img/PopUp Excluir.svg" alt=""></a></button>
-                    <!-- <span><a href="#"><img src="/img/PopUp Excluir.svg" alt=""></a></span>  -->
-                </div>
-            </div>
-            <!-- <div class="fazer-item">
-                    <div class="sup">
-                        <h2 class="top-left">Fazer compras no mercado</h2>
-                        <span class="more_vert"><a href=""><img src="/img/more_vert.svg" alt=""></a></span>
-                    </div>
-                    <div class="inf">
-                        <p id="esconderDesc"><a href="">Esconder descrição <span class="more"><img src="/img/expand_less.svg" alt=""></a></span></p>
-                        <div class="botoes_nav">
-                            <span class="prox"><a href=""><img src="/img/[Botão] Proximo.svg" alt=""></a></span>
-                            <button class="btn-excluir"><img src="/img/PopUp Excluir.svg" alt=""></button>
-                        </div>
-                    </div>
-                    <p id="descricao" class="descricao">Comprar batata, cenoura, feijão, alho, arroz e pipoca.</p>
-                </div> -->
-
+            <h2></h2>
         </div>
         <div id="fazendo" class="estrutura-fazendo">
-            <div class="fazer-item">
-                <div class="sup">
-                    <h2 class="top-left">Fazer manicure</h2>
-                    <span class="more_vert"><a href=""><img src="/img/more_vert.svg" alt=""></a></span>
-                </div>
-                <div class="inf">
-                    <p class="bottom-left"><a href="">Ler descrição <span class="more"><img src="/img/expand_more.svg" alt=""></a></span></p>
-
-                    <div class="botoes_nav">
-                        <span><a href=""><img src="/img/[Botão] Voltar.svg" alt=""></a></span>
-                        <span class="prox"><a href=""><img src="/img/[Botão] Proximo.svg" alt=""></a></span>
-                    </div>
-                </div>
-            </div>
         </div>
         <div class="estrutura-feito">
-            <div class="fazer-item">
-                <div class="sup">
-                    <h2 class="top-left">Fazer manicure</h2>
-                    <span class="more_vert"><a href=""><img src="/img/more_vert.svg" alt=""></a></span>
-                </div>
-                <div class="inf">
-                    <p class="bottom-left"><a href="#">Ler descrição <span class="more"><img src="/img/expand_more.svg" alt=""></a></span></p>
-
-                    <div class="botoes_nav">
-                        <span><a href=""><img src="/img/[Botão] Voltar.svg" alt=""></a></span>
-                        <span class="prox"><a href=""><img src="/img/[Botão] Update.svg" alt=""></a></span>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
     <div id="tela_modal" class="modal">
@@ -133,10 +78,11 @@
         </div>
     </div>
 
-    <div class="carrossel">
+    <!-- Não consegui implementar o carrosel de imagens a tempo -->
+    <!-- <div id="carrosel" class="carrossel">
         <button id="anterior">Anterior</button>
-        <div>
-            <div class="slide" class="ativo">
+        <div id="carrosel_content">
+            <div id="slide1" class="slide">
                 <div class="fazer_carrossel">
                     <h2>A fazer</h2>
                     <a href="#tela_modal"><img src="/img/add_circle_outline_black_24dp.svg" alt=""></a>
@@ -152,13 +98,12 @@
                             <p class="bottom-left"><a href="#">Ler descrição <span class="more"><img src="/img/expand_more.svg" alt=""></a></span></p>
                             <div><span class="prox"><a href=""><img src="/img/[Botão] Proximo.svg" alt=""></a></span></div>
                             <button id="btn_excluir" class="btn-excluir"><a href="#"><img src="/img/PopUp Excluir.svg" alt=""></a></button>
-                            <!-- <span><a href="#"><img src="/img/PopUp Excluir.svg" alt=""></a></span>  -->
                         </div>
                     </div>
                 </div>
             </div>
             <div class="slide">
-                <h2>Em andamento</h2>
+                <h2 class="sub">Em andamento</h2>
                 <div id="fazer" class="estrutura-fazer">
                     <div class="fazer-item">
                         <div class="sup">
@@ -170,13 +115,13 @@
                             <p class="bottom-left"><a href="#">Ler descrição <span class="more"><img src="/img/expand_more.svg" alt=""></a></span></p>
                             <div><span class="prox"><a href=""><img src="/img/[Botão] Proximo.svg" alt=""></a></span></div>
                             <button id="btn_excluir" class="btn-excluir"><a href="#"><img src="/img/PopUp Excluir.svg" alt=""></a></button>
-                            <!-- <span><a href="#"><img src="/img/PopUp Excluir.svg" alt=""></a></span>  -->
+                        
                         </div>
                     </div>
                 </div>
             </div>
             <div class="slide">
-                <h2>Feito</h2>
+                <h2 class="sub">Feito</h2>
                 <div id="fazer" class="estrutura-fazer">
                     <div class="fazer-item">
                         <div class="sup">
@@ -188,14 +133,14 @@
                             <p class="bottom-left"><a href="#">Ler descrição <span class="more"><img src="/img/expand_more.svg" alt=""></a></span></p>
                             <div><span class="prox"><a href=""><img src="/img/[Botão] Proximo.svg" alt=""></a></span></div>
                             <button id="btn_excluir" class="btn-excluir"><a href="#"><img src="/img/PopUp Excluir.svg" alt=""></a></button>
-                            <!-- <span><a href="#"><img src="/img/PopUp Excluir.svg" alt=""></a></span>  -->
+                            
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <button id="proximo">Próximo</button>
-    </div>
+    </div> -->
 
 
     <footer>
