@@ -134,7 +134,7 @@
 }
 
 .more_vert {
-  padding-right: 10px;
+  padding-right: 15px;
 }
 
 .sup {
@@ -188,6 +188,18 @@
   padding-right: 10px;
   padding-bottom: 10px;
 }
+.esconder button,
+.botoes_nav span button {
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 18px;
+}
+
 .carrossel {
   display: flex;
   align-items: center;

@@ -15,7 +15,7 @@ const clickCriar = () => {
   moreVert.setAttribute("id", "more_vert");
 
   moreVert.innerHTML =
-    '<a href="#btn-excluir"><button  id="menuExlcluir" class="menuExcluir"><img src="/img/more_vert.svg" alt=""></button></a>';
+    '<button  id="menuExlcluir" class="menuExcluir"><img src="/img/more_vert.svg" alt=""></button>';
   divSup.appendChild(tituloElement);
   divSup.appendChild(moreVert);
 
@@ -25,14 +25,15 @@ const clickCriar = () => {
   divInf.classList.add("inf");
   var pInf = document.createElement("p");
   pInf.classList.add("esconder");
+
   pInf.innerHTML =
-    '<a href="#">Esconder descrição <span class="more"><img src="/img/expand_less.svg" alt=""></a></span></p>';
+  '<button id="esconder">Esconder descrição <span class="more"><img src="/img/expand_less.svg" alt=""></span></button>';
   var divBotoesNav = document.createElement("div");
   divBotoesNav.classList.add("botoes_nav");
   var spanNav = document.createElement("span");
 
   spanNav.innerHTML =
-    '<span class="prox"><a href=""><img src="/img/[Botão] Proximo.svg" alt=""></a></span>';
+    '<button><span class="prox"><img src="/img/[Botão] Proximo.svg" alt=""></span></button>';
   var btn_excluir = document.createElement("button");
   btn_excluir.classList.add("btn-excluir");
 
@@ -68,9 +69,7 @@ const clickCriar = () => {
 const criarTask = document.getElementById("criar-task");
 criarTask.onclick = clickCriar;
 
-// const clickEsconderDesc = () => {
-//   console.log("teste");
-// };
+
 const mostrarFrase = () => {
   const frase = document.getElementById("modal_frase");
   frase.classList.add("mostrar_frase");
@@ -111,16 +110,4 @@ function atualizarSlide() {
   slides[indexAtual].classList.add("ativo");
 }
 
-// const mostrar = () => {
-//   const btnExcluir = document.getElementById("btn-excluir");
-//   if (event.target.matches(".menuExcluir")) {
-//     if (btnExcluir.classList.contains("mostrar")) {
-//       btnExcluir.classList.remove("mostrar");
-//     } else {
-//       btnExcluir.classList.add("mostar");
-//     }
-//   }
-//   console.log("popopo");
-// };
-// const click = document.getElementById("estrutura");
-// click.onclick = mostrar;
+
