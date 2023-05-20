@@ -61,13 +61,12 @@ const clickCriar = () => {
 const criarTask = document.getElementById("criar-task");
 criarTask.onclick = clickCriar;
 
-
 const clickEsconderDesc = () => {
   console.log("teste");
 };
 const mostrarFrase = () => {
   const frase = document.getElementById("modal_frase");
-    frase.classList.add("mostrar_frase");
+  frase.classList.add("mostrar_frase");
 };
 
 const clickFrase = document.getElementById("frase_mob");
@@ -75,11 +74,35 @@ clickFrase.onclick = mostrarFrase;
 
 const fecharFrase = () => {
   const frase = document.getElementById("modal_frase");
-    frase.classList.remove("mostrar_frase");
+  frase.classList.remove("mostrar_frase");
 };
 
 const clickFechar = document.getElementById("btn_fecharFrase");
 clickFechar.onclick = fecharFrase;
+
+var carrossel = document.querySelector(".carrossel");
+var slides = carrossel.querySelectorAll(".slide");
+var anteriorBtn = document.getElementById("anterior");
+var proximoBtn = document.getElementById("proximo");
+var indexAtual = 0;
+slides[0].classList.add('ativo');
+proximoBtn.addEventListener("click", function () {
+  indexAtual = (indexAtual + 1) % slides.length;
+  atualizarSlide();
+});
+
+anteriorBtn.addEventListener("click", function () {
+  indexAtual = (indexAtual - 1 + slides.length) % slides.length;
+  atualizarSlide();
+});
+
+function atualizarSlide() {
+  slides.forEach(function (slide) {
+    slide.classList.remove("ativo");
+  });
+
+  slides[indexAtual].classList.add("ativo");
+}
 
 // const mostrar = () => {
 //   const btnExcluir = document.getElementById("btn-excluir");

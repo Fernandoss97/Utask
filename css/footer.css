@@ -3,7 +3,7 @@ footer {
   background-color: #114fa7;
 
   display: flex;
-  width: 100%;
+  /* width: 100%; */
   flex-wrap: wrap;
   justify-content: space-between;
   /* position: fixed; */
@@ -28,15 +28,14 @@ footer {
 .assinatura {
   font-weight: 600;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 1000px) {
   footer {
     flex-direction: column;
   }
   .marca1 {
     margin-left: 20px;
-  }
+  } 
   .marca2 {
-    display: flex;
-    margin-left: 20px;
+    padding-left: 20px;
   }
 }

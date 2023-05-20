@@ -1,16 +1,16 @@
-h1 h2 p{
+h1 h2 p {
   margin: 0px;
 }
-img{
+img {
   max-width: 100%;
   display: block;
 }
- body{
-  max-width: 1280px;
+body {
+  width: 100%;
   font-family: Poppins;
   margin: 0px;
   color: #fff;
-}  
+}
 
 a {
   text-decoration: none;

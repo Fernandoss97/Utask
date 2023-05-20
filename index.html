@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>uTask</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
 </head>
 
 <body>
@@ -43,7 +44,6 @@
     <div id="estrutura" class="estrutura">
         <div id="fazer" class="estrutura-fazer">
             <div class="fazer-item">
-
                 <div class="sup">
                     <span id=""></span>
                     <h2 class="top-left">Pagar conta de luz</h2>
@@ -133,6 +133,71 @@
         </div>
     </div>
 
+    <div class="carrossel">
+        <button id="anterior">Anterior</button>
+        <div>
+            <div class="slide" class="ativo">
+                <div class="fazer_carrossel">
+                    <h2>A fazer</h2>
+                    <a href="#tela_modal"><img src="/img/add_circle_outline_black_24dp.svg" alt=""></a>
+                </div>
+                <div id="fazer" class="estrutura-fazer">
+                    <div class="fazer-item">
+                        <div class="sup">
+                            <span id=""></span>
+                            <h2 class="top-left">Pagar conta de luz 1</h2>
+                            <span class="more_vert"><a href="#btn_excluir"><img src="/img/more_vert.svg" alt=""> </a></span>
+                        </div>
+                        <div class="inf">
+                            <p class="bottom-left"><a href="#">Ler descrição <span class="more"><img src="/img/expand_more.svg" alt=""></a></span></p>
+                            <div><span class="prox"><a href=""><img src="/img/[Botão] Proximo.svg" alt=""></a></span></div>
+                            <button id="btn_excluir" class="btn-excluir"><a href="#"><img src="/img/PopUp Excluir.svg" alt=""></a></button>
+                            <!-- <span><a href="#"><img src="/img/PopUp Excluir.svg" alt=""></a></span>  -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <h2>Em andamento</h2>
+                <div id="fazer" class="estrutura-fazer">
+                    <div class="fazer-item">
+                        <div class="sup">
+                            <span id=""></span>
+                            <h2 class="top-left">Pagar conta de luz 2</h2>
+                            <span class="more_vert"><a href="#btn_excluir"><img src="/img/more_vert.svg" alt=""> </a></span>
+                        </div>
+                        <div class="inf">
+                            <p class="bottom-left"><a href="#">Ler descrição <span class="more"><img src="/img/expand_more.svg" alt=""></a></span></p>
+                            <div><span class="prox"><a href=""><img src="/img/[Botão] Proximo.svg" alt=""></a></span></div>
+                            <button id="btn_excluir" class="btn-excluir"><a href="#"><img src="/img/PopUp Excluir.svg" alt=""></a></button>
+                            <!-- <span><a href="#"><img src="/img/PopUp Excluir.svg" alt=""></a></span>  -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <h2>Feito</h2>
+                <div id="fazer" class="estrutura-fazer">
+                    <div class="fazer-item">
+                        <div class="sup">
+                            <span id=""></span>
+                            <h2 class="top-left">Pagar conta de luz 3</h2>
+                            <span class="more_vert"><a href="#btn_excluir"><img src="/img/more_vert.svg" alt=""> </a></span>
+                        </div>
+                        <div class="inf">
+                            <p class="bottom-left"><a href="#">Ler descrição <span class="more"><img src="/img/expand_more.svg" alt=""></a></span></p>
+                            <div><span class="prox"><a href=""><img src="/img/[Botão] Proximo.svg" alt=""></a></span></div>
+                            <button id="btn_excluir" class="btn-excluir"><a href="#"><img src="/img/PopUp Excluir.svg" alt=""></a></button>
+                            <!-- <span><a href="#"><img src="/img/PopUp Excluir.svg" alt=""></a></span>  -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button id="proximo">Próximo</button>
+    </div>
+
+
     <footer>
         <p class="marca1">© Processo de Trainee <a href="https://unect.com.br/">Unect Jr.</a> 2022.1</p>
         <div class="marca2">
@@ -142,6 +207,7 @@
         </div>
     </footer>
     <script src="/scrip.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 </body>
 
 </html>

@@ -10,7 +10,7 @@
 }
 .frase_mob {
   visibility: hidden;
-  margin-top: 32px;
+  margin-top: 20px;
   background-color: #ffd569;
   border-radius: 10px;
   padding-top: 13px;
@@ -90,8 +90,9 @@
   margin-right: 160px;
   margin-top: 8px;
   margin-bottom: 20px;
-  width: 1041px;
-  min-height: fit-content;
+  min-width: 1041px;
+  /* width: 1041px; */
+  
   gap: 40px;
 }
 
@@ -191,11 +192,54 @@
   padding-right: 10px;
   padding-bottom: 10px;
 }
-@media screen and (max-width: 400px) {
+.carrossel {
+  display: flex;
+  /* overflow: hidden; */
+  /* width: 300px; */
+  align-items: center;
+  justify-content: center;
+}
+
+.slide {
+  margin-left: 100px;
+  margin-right: 100px;
+  color: black;
+  flex: 0 0 100%;
+  display: none;
+  /* Outros estilos para cada slide */
+}
+.ativo{
+  display: block;
+}
+.fazer_carrossel{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.fazer_carrossel h2{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 30px;
+}
+@media screen and (max-width: 600px) {
   .secao {
     display: none;
   }
   .frase_mob{
     visibility: visible;
+  }
+  header{
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  
+}
+@media screen and (max-width: 1000px) {
+  .secao{
+    width: auto;
+    margin-right: 20px;
+    margin-left: 20px;
   }
 }
